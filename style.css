@@ -1,0 +1,133 @@
+body {
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.calc {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+    height: 555px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: #2221217d;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: rgb(255 251 251) 4px 0px 20px;
+}
+
+
+marquee {
+    height: 30px;
+    color: rgba(255, 255, 255, 0.835);
+    font-size: 24px;
+}
+
+marquee > strong {
+    color: #15df2d;
+}
+
+.calc-screen {
+    height: 125px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calc-screen p {
+    color: #fff;
+    font-size: 4rem;
+    margin: 0;
+    user-select: none;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+    'ac plus-minus percent division'
+    'c dollar bitcoin stepen'
+    'seven eight nine multi'
+    'four five six minus'
+    'one two three plus'
+    'zero zero dot equal';
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: #a6a6a6;
+}
+
+.btn.bg-orange {
+    background: #ff9501;
+}
+
+.wrapper__ticker {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+}
+
+span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.wrapper__input {
+    position: absolute;
+    left: 7%;
+}
+
+.ticker {
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.ticker:hover {
+    background: rgba(255, 255, 255, 0.19);
+    border: 1px solid #fff;
+}
