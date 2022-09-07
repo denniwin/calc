@@ -33,6 +33,21 @@ marquee > strong {
     color: #15df2d;
 }
 
+span {
+    transition: .6s;
+}
+
+span:hover {
+    transition: .6s;
+    border-bottom: 1px solid #fff;
+    width: 54px;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+
 .calc-screen {
     height: 125px;
     padding: 10px;
@@ -124,10 +139,20 @@ span {
 }
 
 .ticker {
+    transition: 1s;
     border: 1px solid rgba(255, 255, 255, 0);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .ticker:hover {
+    transition: .3s;
     background: rgba(255, 255, 255, 0.19);
     border: 1px solid #fff;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
